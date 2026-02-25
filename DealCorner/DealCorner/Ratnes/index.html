@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deal Corner – Compare Real Deals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <!-- WORKING LOGO -->
+      <img 
+        src="logo.jpg" 
+        class="logo-img" 
+        alt="Deal Corner Logo"
+      />
+
+      <div class="logo-text">
+        <span class="logo-title">DEAL CORNER</span>
+        <span class="logo-sub">COMPARE SMART • SAVE MORE</span>
+      </div>
+    </div>
+
+    <nav class="nav-center">
+      <a href="#hot-deals">Hot Deals</a>
+      <a href="#categories">Categories</a>
+      <a href="#price-alert">Price Range</a>
+      <a href="#products">Compare</a>
+      <a href="#stores">Stores</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="pill">🇮🇳 IN • ₹</div>
+
+      <!-- LOGIN BUTTON -->
+      <a href="login.html" class="login-btn">Login</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hot-deals">
+    <div class="hero-left">
+      <div class="hero-pill">Powered by Deal Corner • Real price history</div>
+
+      <h1 class="hero-title">Discover real deals, not fake discounts.</h1>
+
+      <p class="hero-subtitle">
+        Track real price drops, compare across stores & shop smarter.
+      </p>
+
+      <div class="hero-search">
+        <input id="searchInput" type="text" placeholder="Search or paste product link..." />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <div class="hero-foot">
+        <span>✔ Electronics</span>
+        <span>✔ Clothing</span>
+        <span>✔ Grocery</span>
+        <span>✔ Footwear</span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-card hero-card--top">
+        <span class="badge-green">Best Price</span>
+        <div class="hero-card-title">Flipkart Deal</div>
+        <div class="hero-card-main">₹22,499</div>
+        <div class="hero-card-sub">Huge savings today</div>
+      </div>
+
+      <div class="hero-card hero-card--bottom">
+        <span class="badge-orange">Deal Score: 94/100</span>
+        <div class="hero-card-title">Trending Gadgets</div>
+        <div class="hero-card-main">Hot Picks</div>
+        <div class="hero-card-sub">Phones • TVs • Accessories</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <div class="info-strip">
+    🎯 We compare prices across Amazon, Flipkart, Myntra, AJIO, Croma & more. 
+    <span>Save smarter with real-time data!</span>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories">
+    <div class="section-header">
+      <h2 class="section-title">Shop by Categories</h2>
+      <p class="section-sub">Find the best deals from 12+ categories</p>
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card" data-category="Smartphones">
+        <div class="category-label">Smartphones</div>
+        <div class="category-meta">Android & iPhone deals</div>
+      </div>
+
+      <div class="category-card" data-category="Laptops">
+        <div class="category-label">Laptops</div>
+        <div class="category-meta">Gaming, Work, Student</div>
+      </div>
+
+      <div class="category-card" data-category="Electronics">
+        <div class="category-label">Electronics</div>
+        <div class="category-meta">TVs, Tablets, Speakers</div>
+      </div>
+
+      <div class="category-card" data-category="Clothing">
+        <div class="category-label">Clothing</div>
+        <div class="category-meta">Men & Women fashion</div>
+      </div>
+
+      <div class="category-card" data-category="Shoes">
+        <div class="category-label">Shoes</div>
+        <div class="category-meta">Sports & Casual</div>
+      </div>
+
+      <div class="category-card" data-category="Grocery">
+        <div class="category-label">Grocery</div>
+        <div class="category-meta">Daily essentials</div>
+      </div>
+
+      <div class="category-card" data-category="Accessories">
+        <div class="category-label">Accessories</div>
+        <div class="category-meta">Chargers, Cables</div>
+      </div>
+
+      <div class="category-card" data-category="Beauty">
+        <div class="category-label">Beauty Products</div>
+        <div class="category-meta">Skin & Hair care</div>
+      </div>
+
+      <div class="category-card" data-category="Home">
+        <div class="category-label">Home Decor</div>
+        <div class="category-meta">Lights • Plants • Art</div>
+      </div>
+
+      <div class="category-card" data-category="Kids">
+        <div class="category-label">Kids</div>
+        <div class="category-meta">Toys • Clothing</div>
+      </div>
+
+      <div class="category-card" data-category="Kitchen">
+        <div class="category-label">Kitchen</div>
+        <div class="category-meta">Appliances & Tools</div>
+      </div>
+
+      <div class="category-card" data-category="Sports">
+        <div class="category-label">Sports</div>
+        <div class="category-meta">Fitness gear</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICE RANGE -->
+  <section class="section" id="price-alert">
+    <div class="section-header">
+      <h2 class="section-title">Best Deals this Week</h2>
+      <p class="section-sub">Pick a price range</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card" data-price="99">
+        <div class="price-main">Under ₹99</div>
+        <div class="price-sub">Mini essentials</div>
+      </div>
+
+      <div class="price-card" data-price="499">
+        <div class="price-main">Under ₹499</div>
+        <div class="price-sub">Fashion & gadgets</div>
+      </div>
+
+      <div class="price-card" data-price="999">
+        <div class="price-main">Under ₹999</div>
+        <div class="price-sub">Top picks</div>
+      </div>
+
+      <div class="price-card" data-price="1999">
+        <div class="price-main">Under ₹1,999</div>
+        <div class="price-sub">Smart devices</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="section-header">
+      <h2 class="section-title">Verified Deals</h2>
+      <p class="section-sub" id="resultsInfo">Showing all categories</p>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- STORES -->
+  <section class="section" id="stores">
+    <div class="section-header">
+      <h2 class="section-title">Stores Supported</h2>
+      <p class="section-sub">We compare across India's top platforms</p>
+    </div>
+
+    <div class="store-row">
+      <div class="store-badge">Amazon</div>
+      <div class="store-badge">Flipkart</div>
+      <div class="store-badge">Myntra</div>
+      <div class="store-badge">AJIO</div>
+      <div class="store-badge">Meesho</div>
+      <div class="store-badge">Croma</div>
+      <div class="store-badge">Reliance Digital</div>
+      <div class="store-badge">BigBasket</div>
+      <div class="store-badge">JioMart</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Deal Corner · Price Comparison Engine
+  </footer>
+
+  <!-- AI ASSISTANT -->
+  <div id="ai-toggle">💬</div>
+
+  <div id="ai-widget">
+    <div class="ai-header">
+      DealCorner Assistant
+      <span id="ai-close">✕</span>
+    </div>
+    <div class="ai-body" id="ai-messages">
+      <div class="ai-msg ai-msg-bot">
+        Hi! 👋 I’m DealCorner assistant. Ask me anything!
+      </div>
+    </div>
+    <div class="ai-input-wrap">
+      <input id="ai-input" placeholder="Ask: best phone under 20k?" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
